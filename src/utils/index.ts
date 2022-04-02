@@ -2,7 +2,6 @@ import {useEffect, useState} from "react";
 
 export const isFalsy = (value: unknown) => value === 0 ? false : !value
 
-
 export const cleanObject = <T extends object, U extends keyof T>(object: T) => {
     const result = {...object}
     Object.keys(result).forEach(key => {
