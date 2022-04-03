@@ -1,10 +1,9 @@
 import React from "react";
 import {useAuth} from "../context/auth-context";
 
-const apiUrl = process.env.REACT_APP_API_URL
 export const LoginScreen = () => {
 
-  const {login, user } = useAuth()
+  const {login} = useAuth()
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 
