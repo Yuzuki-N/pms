@@ -3,6 +3,7 @@ import React from "react";
 import {Form, Button, Input} from 'antd'
 
 import {useAuth} from "../context/auth-context";
+import {LongButton} from "./index";
 
 export const LoginScreen = () => {
 
@@ -22,7 +23,7 @@ export const LoginScreen = () => {
         <Input placeholder={'密码'} type="password" id={'password'}/>
       </Form.Item>
       <Form.Item>
-        <Button type={'primary'} htmlType={'submit'}>登录</Button>
+        <LongButton type={'primary'} htmlType={'submit'}>登录</LongButton>
       </Form.Item>
     </Form>
   )
